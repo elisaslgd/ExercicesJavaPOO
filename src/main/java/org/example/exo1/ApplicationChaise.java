@@ -12,6 +12,10 @@ public class ApplicationChaise {
         Chaise chaise3 = new Chaise(1, "métal", "orange", 76.25f);
         System.out.println(chaise3.toString());
 
+        //Chaise chaise4 = new Chaise();
+        //System.out.println(chaise4.toString());
+        //System.out.println(chaise4);
+
 
     }
 }

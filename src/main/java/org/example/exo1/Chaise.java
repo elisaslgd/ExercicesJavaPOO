@@ -15,6 +15,9 @@ public class Chaise {
         this.prix = prix;
     }
 
+    public Chaise() {
+    }
+
     @Override
     public String toString() {
         return "Je suis une chaise avec " +
