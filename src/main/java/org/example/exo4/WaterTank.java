@@ -9,24 +9,33 @@ public class WaterTank {
     private float nivRemplissage;
     public static float totalVolume;
 
-    private float tot;
-    private float volumeDepart;
     private int numWaterTank;
 
-    public WaterTank(float volumeDepart) {
+    private float tot;
+    private float volumeDepart;
+
+
+    public WaterTank() {
         this.volumeDepart = volumeDepart;
         totalVolume = totalVolume + volumeDepart;
-        numWaterTank++;
     }
 
     public String getVolumeDepart() {
         return
-        "WaterTank " + numWaterTank + " volume de départ : "+volumeDepart;
+        "WaterTank "  + numWaterTank + " volume de départ : "+volumeDepart;
     }
 
     public void setVolumeDepart(float volumeDepart) {
         this.volumeDepart = volumeDepart;
         totalVolume += volumeDepart;
+    }
+
+    public int getNumWaterTank() {
+        return numWaterTank;
+    }
+
+    public void setNumWaterTank(int numWaterTank) {
+        this.numWaterTank = numWaterTank;
     }
 
     public float getTot() {
@@ -37,13 +46,6 @@ public class WaterTank {
         this.tot = tot;
     }
 
-    public int getNumWaterTank() {
-        return numWaterTank;
-    }
-
-    public void setNumWaterTank(int numWaterTank) {
-        this.numWaterTank = numWaterTank;
-    }
 
     public float getPoidsVide() {
         return poidsVide;
